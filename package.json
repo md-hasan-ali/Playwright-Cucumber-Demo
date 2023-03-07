@@ -1,0 +1,31 @@
+{
+  "scripts": {
+
+    "test": "cucumber-js src\\features\\**\\**\\*.feature --require-module ts-node/register --require src/steps/**/**/*.ts",
+
+    "test:reporter": "playwright test --headed --reporter=allure-playwright,line,./src/steps/**/**/*.ts",
+
+    "allure-report": "npx playwright test --reporter=line,experimental-allure-playwright"
+
+  },
+
+  "devDependencies": {
+
+    "@cucumber/cucumber": "^7.3.2",
+
+    "@playwright/test": "^1.26.1",
+
+    "allure-commandline": "^2.18.1",
+
+    "allure-playwright": "^2.0.0-beta.19",
+
+    "cucumber-html-reporter": "^5.5.0",
+
+    "ts-node": "^10.7.0",
+
+    "typescript": "^4.6.2"
+
+  }
+
+}
+
