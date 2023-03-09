@@ -5,7 +5,7 @@ Feature: Open rokomari Website And Sign Up
         Given User Open The Rokomari Website
 
     Scenario: Open rokomari Website And Sign Up
-        # And Click Cross Button Of Add
+        And Click Cross Button Of Add
         And Click On Sign In Button
         And Click On Sign UP Button
         And Enter users informations:
